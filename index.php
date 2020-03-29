@@ -29,6 +29,8 @@ echo json_encode($usuarios);
 
 //echo $usuario;
 
+
+/*Alterar um usuário
 $usuario = new Usuario();
 
 $usuario->loadById(4);
@@ -36,6 +38,11 @@ $usuario->loadById(4);
 $usuario->update("Machado", "machado");
 
 echo $usuario;
+*/
 
+$usuario = new Usuario();
+$usuario->loadById(4);
+$usuario->delete();
+echo $usuario;
 
 ?>
